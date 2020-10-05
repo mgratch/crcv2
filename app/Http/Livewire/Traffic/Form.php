@@ -38,6 +38,7 @@ class Form extends Component
 
         if($traffic){
 
+            //Edit Traffic
             $this->traffic = $traffic;
             $this->salesman = explode(', ', $traffic->salesman);
             $this->branch = $traffic->branch;
@@ -53,6 +54,7 @@ class Form extends Component
             $this->customer = $traffic->customer;
             $this->comments = $traffic->comments;
 
+            //WIP Initial Files on edit for filepond
             foreach ($traffic->details as $detail) {
                 $uploadedFile[] = $detail->name;
             }
@@ -61,6 +63,7 @@ class Form extends Component
 
         } else {
 
+            //New Traffic
             $this->traffic = null;
             $this->salesman = '';
             $this->branch = auth()->user()->branch;
@@ -77,6 +80,7 @@ class Form extends Component
             $this->comments = '';
         }
 
+        //Find salesman for form
         $this->users = User::select('users.*')
             ->join('team_user', 'team_user.user_id', '=', 'users.id')
             ->where('team_user.team_id', '=', '5')
@@ -84,6 +88,8 @@ class Form extends Component
             ->get();
     }
 
+
+    //New livewire only form submission - save function.
     public function save()
     {
 
@@ -104,12 +110,15 @@ class Form extends Component
             'comments' => $this->comments,
         ];
 
+        //Edit traffic
         if ($this->traffic) {
             Traffic::find($this->traffic->id)->update($data);
 
         } else {
+            //Save new traffic
             $traffic = Traffic::create($data);
 
+            //Save new details for the traffic (images)
             foreach($this->details as $detail) {
 
                 $filename = $detail->store('/', 'details');
@@ -130,6 +139,8 @@ class Form extends Component
         }
     }
 
+
+    //Old way with jquery fileuploader - submit function.
     public function submit()
     {
 

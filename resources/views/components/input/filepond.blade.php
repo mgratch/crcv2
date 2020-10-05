@@ -37,5 +37,3 @@
     <input type="file" x-ref="input">
 
 </div>
-
-{{ $attributes['uploadedFile'] }}
