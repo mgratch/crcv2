@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b318c4c-da3e-48f3-a53f-0372329aa3e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Traffic/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Traffic/Form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/input/filepond.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/input/filepond.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="4b318c4c-da3e-48f3-a53f-0372329aa3e4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -207,12 +202,24 @@
       <workItem from="1601823195506" duration="4607000" />
       <workItem from="1601829812484" duration="5751000" />
       <workItem from="1601917394362" duration="169000" />
-      <workItem from="1601917792678" duration="521000" />
+      <workItem from="1601917792678" duration="728000" />
     </task>
+    <task id="LOCAL-00001" summary="Updated w/ details for Marc.">
+      <created>1601918465359</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601918465359</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated w/ details for Marc." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated w/ details for Marc." />
   </component>
   <component name="WindowStateProjectService">
     <state x="627" y="325" key="#Inspections" timestamp="1601662417455">
@@ -233,6 +240,10 @@
     </state>
     <state x="936" y="435" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601229885396" />
     <state x="731" y="402" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2000.1293@0.0.2000.1293" timestamp="1600521207432" />
+    <state x="905" y="286" key="CommitChangelistDialog2" timestamp="1601918465047">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="905" y="286" key="CommitChangelistDialog2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601918465047" />
     <state x="1000" y="435" key="FileChooserDialogImpl" timestamp="1601823475857">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -255,6 +266,10 @@
       <screen x="0" y="0" width="2000" height="1293" />
     </state>
     <state width="1957" height="366" key="GridCell.Tab.0.right/0.0.2000.1293@0.0.2000.1293" timestamp="1600450409011" />
+    <state x="872" y="432" key="Vcs.Push.Dialog.v2" timestamp="1601918331784">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="432" key="Vcs.Push.Dialog.v2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601918331784" />
     <state x="-7" y="0" width="1013" height="1300" key="dock-window-1" timestamp="1601578350583">
       <screen x="0" y="0" width="2000" height="1293" />
     </state>
