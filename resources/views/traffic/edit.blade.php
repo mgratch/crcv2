@@ -1,7 +1,9 @@
 @push('headscripts')
     <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+    <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+    <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet">
 @endpush
-<x-app-layout>
+<x-layouts.app>
 
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
@@ -23,6 +25,8 @@
 
     @push('bodyscripts')
         <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+        <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+        <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
     @endpush
 
-</x-app-layout>
+</x-layouts.app>

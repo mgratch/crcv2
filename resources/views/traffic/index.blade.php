@@ -1,15 +1,13 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            Traffic
-        </h2>
-    </x-slot>
+@push('headscripts')
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+@endpush
+<x-layouts.user>
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                Traffic Index for DataTables
-            </div>
-        </div>
-    </div>
-</x-app-layout>
+    <livewire:traffic-table>
+
+    @push('bodyscripts')
+            <script src="https://unpkg.com/moment"></script>
+            <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    @endpush
+
+</x-layouts.user>

@@ -13,7 +13,8 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        //
+        Commands\DeletedTraffic::class,
+        Commands\DeletedTrucking::class,
     ];
 
     /**
@@ -25,6 +26,8 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         // $schedule->command('inspire')->hourly();
+        $schedule->command('deleted:traffic')->daily();
+        $schedule->command('deleted:trucking')->daily();
     }
 
     /**

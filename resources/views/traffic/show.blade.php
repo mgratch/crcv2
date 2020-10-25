@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-layouts.app>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight uppercase">
             Check {{ $traffic->io }}: {{ $traffic->make }} {{ $traffic->model }} S/N:{{ $traffic->sn }}
@@ -39,7 +39,7 @@
                                             <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
                                         </svg>
                                         <div class="pt-1 uppercase">
-                                            {{ $traffic->created_at->format('m/d/y \a\t g:i a') }} by {{ $enteredby->name }}
+                                            {{ $traffic->date_for_display }} by {{ $enteredBy->name }}
                                         </div>
                                     </div>
                                     </p>
@@ -151,4 +151,4 @@
         </div>
     </div>
 
-</x-app-layout>
+</x-layouts.app>

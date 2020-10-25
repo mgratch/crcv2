@@ -2,6 +2,7 @@
     wire:ignore
     x-data
     x-init="
+            FilePond.registerPlugin(FilePondPluginImagePreview);
             FilePond.create($refs.input, {
                 allowMultiple: {{ isset($attributes['multiple']) ? 'true' : 'false' }},
                 server: {
@@ -11,21 +12,25 @@
                     revert: (filename, load) => {
                         @this.removeUpload('{{ $attributes['wire:model'] }}', filename, load)
                     },
+                    @if(!empty($uploadedFile))
                     load: (uniqueFileId, load, error, progress, abort, headers) => {
-                    fetch(`{{ Storage::disk('details')->url($attributes['uploadedFile']) }}`).then((res) => {
+                    fetch(`{{ Storage::disk('details')->url($uploadedFile) }}`).then((res) => {
                         return res.blob();
                      }).then(load);
-                    },
+                       },
+                    @endif
                 },
+                @if(!empty($uploadedFile))
                 files: [
                     {
-                        source: '{{ Storage::disk('details')->url($attributes['uploadedFile']) }}',
+                        source: '{{ $uploadedFile }}',
 
                         options: {
                             type: 'local',
                         },
                     }
                 ],
+                @endif
 
                 onremovefile: (error, file) => {
                     @this.set('{{ $attributes['wire:model'] }}', null);

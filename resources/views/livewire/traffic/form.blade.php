@@ -48,26 +48,26 @@
         <option value="Wirtgen">Wirtgen</option>
     </x-input.dropdown>
 
-    <x-input.text field="model" leadingAddOn="Model" />
+    <x-input.formtext field="model" leadingAddOn="Model" />
 
-    <x-input.text field="sn" leadingAddOn="S/N:" />
+    <x-input.formtext field="sn" leadingAddOn="S/N:" />
 
-    <x-input.text field="hours" leadingAddOn="Hours" />
+    <x-input.formtext field="hours" leadingAddOn="Hours" />
 
-    <x-input.text field="fuel" leadingAddOn="Fuel" />
+    <x-input.formtext field="fuel" leadingAddOn="Fuel" />
 
-    <x-input.text field="attachments" leadingAddOn="Attachments" />
+    <x-input.formtext field="attachments" leadingAddOn="Attachments" />
 
     <x-input.dropdown field="damages" leadingAddOn="Damages">
         <option value="No">No</option>
         <option value="Yes">Yes</option>
     </x-input.dropdown>
 
-    <x-input.text field="customer" leadingAddOn="Customer" />
+    <x-input.formtext field="customer" leadingAddOn="Customer" />
 
-    <x-input.text field="comments" leadingAddOn="Comments" />
+    <x-input.formtext field="comments" leadingAddOn="Comments" />
 
-    <x-input.filepond wire:model="details" :uploadedFile="$uploadedFile" multiple />
+{{--    <x-input.filepond wire:model="details" :uploadedFile="$uploadedFile" multiple />--}}
 
     <span class="inline-flex rounded-md shadow-sm">
         <button class="inline-flex items-center px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150">

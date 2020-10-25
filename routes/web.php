@@ -2,6 +2,7 @@
 
 
 use App\Http\Controllers\TrafficController;
+use App\Http\Controllers\TruckingController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,14 +23,15 @@ Route::get('/', function () {
 
 //traffic
 Route::get('/traffic', [TrafficController::class, 'store']);
-Route::get('/traffic', [TrafficController::class, 'index']);
-Route::get('/traffic/create', [TrafficController::class, 'create']);
-Route::get('/traffic/{traffic}', [TrafficController::class, 'show']);
-Route::get('/traffic/{traffic}/edit', [TrafficController::class, 'edit']);
+Route::get('/traffic', [TrafficController::class, 'index'])->name('traffic.index');
+Route::get('/traffic/create', [TrafficController::class, 'create'])->name('traffic.create');
+Route::get('/traffic/{traffic}', [TrafficController::class, 'show'])->name('traffic.show');
+Route::get('/traffic/{traffic}/edit', [TrafficController::class, 'edit'])->name('traffic.edit');
 Route::patch('/traffic/{traffic}', [TrafficController::class, 'update']);
 
-//Livewire traffic
-Route::get('/t/create', [TrafficController::class, 'createnew']);
+//trucking
+Route::get('/trucking', [TruckingController::class, 'index'])->name('trucking.index');
+Route::get('/trucking/deleted', [TruckingController::class, 'deleted'])->name('trucking.deleted');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

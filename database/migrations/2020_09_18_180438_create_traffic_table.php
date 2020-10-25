@@ -30,8 +30,9 @@ class CreateTrafficTable extends Migration
             $table->string('customer')->nullable();
             $table->text('comments')->nullable();
             $table->timestamps();
+            $table->softDeletes();
 
-            $table->index('user_id');
+            $table->index('id');
         });
     }
 

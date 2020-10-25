@@ -2,7 +2,7 @@
     <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
 @endpush
 
-<x-app-layout>
+<x-layouts.app>
 
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
@@ -26,4 +26,4 @@
         <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
     @endpush
 
-</x-app-layout>
+</x-layouts.app>

@@ -1,7 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:oigin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b318c4c-da3e-48f3-a53f-0372329aa3e4" name="Default Changelist" comment="" />
+    <list default="true" id="4b318c4c-da3e-48f3-a53f-0372329aa3e4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/DataTable/WithBulkActions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/DataTable/WithCaching.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/DataTable/WithSorting.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/TrafficFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/TruckingFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/details/8deuxaSN8yw7QuD2bMDGWJgRH1mwPPLqH3PdLTRu.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/details/G7dwIgdRw6HBu4SveNfA4XdQMrc5PlE9OQ4m5VHq.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/details/ILvF3Bv7kBYr29HV6uzgW9WVITo54rDw149KtgRr.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/details/Q9SZBLFzhn51EvnwOZ0Iss4kgHb1ktq6iUuBLHAw.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/details/S7Z6ANPh9zqLu7vHAUnSf3LeWsetLyeX3gVokISP.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/details/nmE41JrsANBWXNzQoIyNuQxNbtMa5NcxAPdopNXi.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/details/wRaqYKNWDiCzosznI8A6oCjApfAd5TaY4i1ZxE4O.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/button/danger.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/icon/pencil.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/icon/refresh.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/input/formtext.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/input/group-nolabel.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/layouts/user.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/trucking/deleted.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/trucking/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/crcv2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/crcv2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TrafficController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TrafficController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Traffic/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Traffic/Form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Traffic.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Traffic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_18_180438_create_traffic_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_18_180438_create_traffic_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/input/filepond.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/input/filepond.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/input/text.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/input/text.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/traffic/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/traffic/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/teams/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teams/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/teams/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teams/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/traffic/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/traffic/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/traffic/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/traffic/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/traffic/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/traffic/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/traffic/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/traffic/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/console.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +95,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/resources/views/traffic/edit.blade.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -141,10 +219,16 @@
       <path value="$PROJECT_DIR$/vendor/laravel/jetstream" />
       <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
       <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hh4y9FGC20s9b7fB4fQHj9KGo3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -152,24 +236,26 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/trucking" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\mschu\OneDrive\Development\crcv2\storage\app" />
-      <recent name="C:\Users\mschu\OneDrive\Development\crcv2\storage\app\public" />
-      <recent name="C:\Users\mschu\OneDrive\Development\crcv2\app\Http\Livewire\Traffic" />
-      <recent name="C:\Users\mschu\OneDrive\Development\crcv2\resources\views\livewire\traffic" />
-      <recent name="E:\OneDrive\Development\crcv2\resources\views\traffic" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mschu\OneDrive\Development\crcv2\resources\views\trucking" />
+      <recent name="C:\Users\mschu\OneDrive\Development\crcv2\resources\views" />
+      <recent name="C:\Users\mschu\OneDrive\Development\crcv2\resources\views\layouts" />
       <recent name="C:\Users\mschu\OneDrive\Development\crcv2\storage\app\details" />
       <recent name="C:\Users\mschu\OneDrive\Development\crcv2\storage\details" />
-      <recent name="C:\Users\mschu\OneDrive\Development\crcv2\resources\views\traffic" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\OneDrive\Development\crcv2\resources\views\trucking" />
+      <recent name="C:\Users\mschu\OneDrive\Development\crcv2\resources\views\components" />
+      <recent name="C:\Users\mschu\OneDrive\Development\crcv2\resources\views\components\layouts" />
+      <recent name="C:\Users\mschu\OneDrive\Development\crcv2\storage\app" />
+      <recent name="C:\Users\mschu\OneDrive\Development\crcv2\storage\app\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -202,7 +288,28 @@
       <workItem from="1601823195506" duration="4607000" />
       <workItem from="1601829812484" duration="5751000" />
       <workItem from="1601917394362" duration="169000" />
-      <workItem from="1601917792678" duration="728000" />
+      <workItem from="1601917792678" duration="1541000" />
+      <workItem from="1602259150709" duration="19779000" />
+      <workItem from="1602629868853" duration="14496000" />
+      <workItem from="1602717096263" duration="1804000" />
+      <workItem from="1602781443746" duration="12084000" />
+      <workItem from="1602853778644" duration="4040000" />
+      <workItem from="1602974273335" duration="209000" />
+      <workItem from="1602974489874" duration="3168000" />
+      <workItem from="1603033519253" duration="1474000" />
+      <workItem from="1603035370028" duration="185000" />
+      <workItem from="1603035582543" duration="63000" />
+      <workItem from="1603035670368" duration="20781000" />
+      <workItem from="1603148338286" duration="152000" />
+      <workItem from="1603148509867" duration="1406000" />
+      <workItem from="1603221929430" duration="2019000" />
+      <workItem from="1603305623831" duration="9503000" />
+      <workItem from="1603370241904" duration="5420000" />
+      <workItem from="1603472595859" duration="460000" />
+      <workItem from="1603549237729" duration="1125000" />
+      <workItem from="1603550416343" duration="686000" />
+      <workItem from="1603581207053" duration="1930000" />
+      <workItem from="1603616814299" duration="11032000" />
     </task>
     <task id="LOCAL-00001" summary="Updated w/ details for Marc.">
       <created>1601918465359</created>
@@ -211,11 +318,30 @@
       <option name="project" value="LOCAL" />
       <updated>1601918465359</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated w/ details for Marc.">
+      <created>1601918591263</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601918591263</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated w/ details for Marc." />
@@ -226,30 +352,35 @@
       <screen x="0" y="0" width="2000" height="1293" />
     </state>
     <state x="627" y="325" key="#Inspections/0.0.2000.1293@0.0.2000.1293" timestamp="1601662417455" />
-    <state x="772" y="449" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601653667388">
+    <state x="1036" y="519" key="#Notifications" timestamp="1603148357714">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1036" y="519" key="#Notifications/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1603148357714" />
+    <state x="772" y="449" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603063154541">
       <screen x="0" y="0" width="2000" height="1293" />
     </state>
-    <state x="772" y="449" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2000.1293@0.0.2000.1293" timestamp="1601653667388" />
-    <state x="542" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601486157151">
+    <state x="988" y="486" key="#com.intellij.fileTypes.FileTypeChooser/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1602259275715" />
+    <state x="772" y="449" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2000.1293@0.0.2000.1293" timestamp="1603063154541" />
+    <state x="542" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603306651461">
       <screen x="0" y="0" width="2000" height="1293" />
     </state>
     <state x="694" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601402661780" />
-    <state x="542" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2000.1293@0.0.2000.1293" timestamp="1601486157151" />
-    <state x="936" y="435" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601229885396">
+    <state x="542" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2000.1293@0.0.2000.1293" timestamp="1603306651461" />
+    <state x="936" y="435" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603619071899">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="936" y="435" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601229885396" />
-    <state x="731" y="402" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2000.1293@0.0.2000.1293" timestamp="1600521207432" />
-    <state x="905" y="286" key="CommitChangelistDialog2" timestamp="1601918465047">
+    <state x="936" y="435" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1603619071899" />
+    <state x="731" y="402" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2000.1293@0.0.2000.1293" timestamp="1603579257353" />
+    <state x="905" y="286" key="CommitChangelistDialog2" timestamp="1601918590985">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="905" y="286" key="CommitChangelistDialog2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601918465047" />
-    <state x="1000" y="435" key="FileChooserDialogImpl" timestamp="1601823475857">
+    <state x="905" y="286" key="CommitChangelistDialog2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601918590985" />
+    <state x="1000" y="435" key="FileChooserDialogImpl" timestamp="1603148650151">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="-1560" y="435" key="FileChooserDialogImpl/-2560.0.2560.1400/0.0.2560.1400@-2560.0.2560.1400" timestamp="1600793843128" />
-    <state x="1000" y="435" key="FileChooserDialogImpl/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601823475857" />
-    <state x="781" y="402" key="FileChooserDialogImpl/0.0.2000.1293@0.0.2000.1293" timestamp="1601742311959" />
+    <state x="-1560" y="435" key="FileChooserDialogImpl/-2560.0.2560.1400/0.0.2560.1400@-2560.0.2560.1400" timestamp="1602980556251" />
+    <state x="1000" y="435" key="FileChooserDialogImpl/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1603148650151" />
+    <state x="781" y="402" key="FileChooserDialogImpl/0.0.2000.1293@0.0.2000.1293" timestamp="1603048450164" />
     <state width="1957" height="366" key="GridCell.Tab.0.bottom" timestamp="1600450409011">
       <screen x="0" y="0" width="2000" height="1293" />
     </state>
@@ -266,18 +397,30 @@
       <screen x="0" y="0" width="2000" height="1293" />
     </state>
     <state width="1957" height="366" key="GridCell.Tab.0.right/0.0.2000.1293@0.0.2000.1293" timestamp="1600450409011" />
-    <state x="872" y="432" key="Vcs.Push.Dialog.v2" timestamp="1601918331784">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="872" y="432" key="Vcs.Push.Dialog.v2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601918331784" />
-    <state x="-7" y="0" width="1013" height="1300" key="dock-window-1" timestamp="1601578350583">
+    <state x="610" y="318" key="SettingsEditor" timestamp="1603306572597">
       <screen x="0" y="0" width="2000" height="1293" />
     </state>
-    <state x="-7" y="0" width="1013" height="1300" key="dock-window-1/0.0.2000.1293@0.0.2000.1293" timestamp="1601578350583" />
-    <state x="849" y="313" width="861" height="735" key="search.everywhere.popup" timestamp="1601826936367">
+    <state x="-1779" y="344" key="SettingsEditor/-2560.0.2560.1400/0.0.2560.1400@-2560.0.2560.1400" timestamp="1602974848725" />
+    <state x="781" y="344" key="SettingsEditor/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1603222031237" />
+    <state x="610" y="318" key="SettingsEditor/0.0.2000.1293@0.0.2000.1293" timestamp="1603306572597" />
+    <state x="872" y="432" key="Vcs.Push.Dialog.v2" timestamp="1601918604110">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="849" y="313" width="861" height="735" key="search.everywhere.popup/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601826936367" />
-    <state x="663" y="289" width="672" height="678" key="search.everywhere.popup/0.0.2000.1293@0.0.2000.1293" timestamp="1601664931367" />
+    <state x="872" y="432" key="Vcs.Push.Dialog.v2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601918604110" />
+    <state x="857" y="566" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603305447252">
+      <screen x="0" y="0" width="2000" height="1293" />
+    </state>
+    <state x="1097" y="613" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1602855763993" />
+    <state x="857" y="566" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2000.1293@0.0.2000.1293" timestamp="1603305447252" />
+    <state x="-1462" y="0" width="1050" height="1388" key="dock-window-1" timestamp="1602804556667">
+      <screen x="-2560" y="0" width="2560" height="1400" />
+    </state>
+    <state x="-1462" y="0" width="1050" height="1388" key="dock-window-1/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1602804556667" />
+    <state x="-7" y="0" width="1013" height="1300" key="dock-window-1/0.0.2000.1293@0.0.2000.1293" timestamp="1601578350583" />
+    <state x="849" y="313" width="861" height="735" key="search.everywhere.popup" timestamp="1603654750451">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="849" y="313" width="861" height="735" key="search.everywhere.popup/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1603654750451" />
+    <state x="663" y="289" width="672" height="678" key="search.everywhere.popup/0.0.2000.1293@0.0.2000.1293" timestamp="1603579218952" />
   </component>
 </project>

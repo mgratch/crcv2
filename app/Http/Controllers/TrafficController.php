@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Traffic;
 use App\Models\User;
-use FileUploader;
 
 class TrafficController extends Controller
 {
@@ -47,9 +46,9 @@ class TrafficController extends Controller
 
     public function show(Traffic $traffic)
     {
-        $enteredby = User::where('id', $traffic->user_id)->first();
+        $enteredBy = User::where('id', $traffic->user_id)->first();
 
-        return view('traffic.show', compact('traffic', 'enteredby'));
+        return view('traffic.show', compact('traffic', 'enteredBy'));
     }
 
     public function store()

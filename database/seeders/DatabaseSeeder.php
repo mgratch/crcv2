@@ -2,6 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Traffic;
+use App\Models\Trucking;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,6 +16,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // User::factory(10)->create();
+        Traffic::factory(1000)->create();
+        Trucking::factory(1000)->create();
+        User::factory(50)->create();
     }
 }
