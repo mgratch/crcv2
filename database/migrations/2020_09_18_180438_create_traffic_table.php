@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 class CreateTrafficTable extends Migration
@@ -17,23 +18,23 @@ class CreateTrafficTable extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->string('salesman');
-            $table->string('branch');
+            $table->string('branch')->index();
             $table->string('rerent');
             $table->string('io');
             $table->string('make')->nullable();
             $table->string('model')->nullable();
-            $table->string('sn')->nullable();
+            $table->string('sn')->nullable()->index();
             $table->string('hours')->nullable();
             $table->string('fuel')->nullable();
             $table->text('attachments')->nullable();
             $table->string('damages');
-            $table->string('customer')->nullable();
+            $table->string('customer')->nullable()->index();
             $table->text('comments')->nullable();
             $table->timestamps();
             $table->softDeletes();
-
-            $table->index('id');
         });
+
+        DB::statement('ALTER TABLE traffic ADD FULLTEXT fulltext_index (salesman, make, model, sn, attachments, customer)');
     }
 
     /**

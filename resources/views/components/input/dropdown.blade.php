@@ -4,7 +4,7 @@
     'field'
 ])
 
-<div class="pt-3">
+<div class="{{ $leadingAddOn ? 'pt-3' : '' }}">
     <div class="mt-1 flex rounded-md shadow-sm">
         @if($leadingAddOn)
             <span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 sm:text-sm">
@@ -17,7 +17,7 @@
             wire:model.lazy="{{ $field }}"
             name="{{ $field }}"
             id="{{ $field }}"
-            class="form-select block w-full pl-3 pr-10 py-2 text-base leading-6 rounded-l-none border-gray-300 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"
+            class="form-select block w-full pl-3 pr-10 py-2 text-base leading-6 {{ $leadingAddOn ? 'rounded-l-none' : 'rounded-l-md' }} border-gray-300 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5"
         >
             {{ $slot }}
         </select>

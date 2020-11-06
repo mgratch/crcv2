@@ -25,7 +25,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'branch', 'traffic', 'trucking', 'password',
     ];
 
     /**
@@ -61,5 +61,10 @@ class User extends Authenticatable
     public function traffic()
     {
         return $this->hasMany(Traffic::class);
+    }
+
+    public function trucking()
+    {
+        return $this->hasMany(Trucking::class);
     }
 }

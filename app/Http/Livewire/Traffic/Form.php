@@ -4,7 +4,9 @@ namespace App\Http\Livewire\Traffic;
 
 use App\Models\Details;
 use App\Models\User;
+use App\Notifications\TrafficCreated;
 use Illuminate\Http\Testing\MimeType;
+use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Facades\Storage;
 use Livewire\Component;
 use App\Models\Traffic;
@@ -117,6 +119,8 @@ class Form extends Component
         } else {
             //Save new traffic
             $traffic = Traffic::create($data);
+
+            Notification::send(auth()->user(), new TrafficCreated($traffic));
 
             //Save new details for the traffic (images)
             foreach($this->details as $detail) {

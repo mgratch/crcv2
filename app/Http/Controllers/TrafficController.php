@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Traffic;
 use App\Models\User;
+use Barryvdh\DomPDF\Facade as PDF;
 
 class TrafficController extends Controller
 {
@@ -49,6 +50,19 @@ class TrafficController extends Controller
         $enteredBy = User::where('id', $traffic->user_id)->first();
 
         return view('traffic.show', compact('traffic', 'enteredBy'));
+    }
+
+    public function pdf(Traffic $traffic)
+    {
+        $enteredBy = User::where('id', $traffic->user_id)->first();
+
+        $data = [
+            'traffic' => $traffic,
+            'enteredBy' => $enteredBy,
+        ];
+
+        $pdf = PDF::loadView('traffic.pdf', $data);
+        return $pdf->download('traffic_'.$traffic->sn.'_'.$traffic->created_at->format('m-d-Y').'.pdf');
     }
 
     public function store()
