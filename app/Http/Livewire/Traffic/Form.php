@@ -4,12 +4,15 @@ namespace App\Http\Livewire\Traffic;
 
 use App\Models\Details;
 use App\Models\User;
+use Carbon\Carbon;
 use App\Notifications\TrafficCreated;
 use Illuminate\Http\Testing\MimeType;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Facades\Storage;
 use Livewire\Component;
 use App\Models\Traffic;
+use Livewire\Request;
+use Livewire\TemporaryUploadedFile;
 use Livewire\WithFileUploads;
 use FileUploader;
 
@@ -34,6 +37,11 @@ class Form extends Component
     public $traffic;
     public $details = [];
     public $uploadedFile;
+
+    public function removeFile($name, $file) {
+        $traffic = Traffic::find($this->traffic->id);
+        return $traffic->details()->where('traffic_id',$traffic->id)->where('name', $file)->firstOrFail()->delete();
+    }
 
     public function mount($traffic)
     {
@@ -61,7 +69,9 @@ class Form extends Component
                 $uploadedFile[] = $detail->name;
             }
 
-            $this->uploadedFile = implode(', ', $uploadedFile);
+            if (!empty($uploadedFile) && is_array($uploadedFile)) {
+                $this->uploadedFile = json_encode($uploadedFile);
+            }
 
         } else {
 
@@ -114,8 +124,25 @@ class Form extends Component
 
         //Edit traffic
         if ($this->traffic) {
-            Traffic::find($this->traffic->id)->update($data);
-
+            $traffic = Traffic::find($this->traffic->id);
+            $traffic->update($data);
+            if (is_array($this->details)){
+                foreach ($this->details as $detail) {
+                    $filename = $detail->store('/', 'details');
+                    $traffic->details()->create([
+                        'traffic_id' => $traffic->id,
+                        'extension' => '',
+                        'format' => MimeType::from($filename),
+                        'file' => '',
+                        'name' => $filename,
+                        'size' => Storage::size('/details/' . $filename),
+                        'size2' => '',
+                        'title' => '',
+                        'type' => '',
+                        'url' => Storage::disk('details')->url($filename),
+                    ]);
+                }
+            }
         } else {
             //Save new traffic
             $traffic = Traffic::create($data);
@@ -200,7 +227,7 @@ class Form extends Component
                             'size2' => $upload['files'][$key]['size2'],
                             'title' => $upload['files'][$key]['title'],
                             'type' => $upload['files'][$key]['type'],
-                            'url' => 'http://localhost:8000/' . $uploadDir . $upload['files'][$key]['name'],
+                            'url' => config('url') . '/' . $uploadDir . $upload['files'][$key]['name'],
                         ]));
                 }
             } else {
