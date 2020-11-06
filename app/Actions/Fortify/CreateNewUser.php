@@ -3,6 +3,7 @@
 namespace App\Actions\Fortify;
 
 use App\Models\Team;
+use App\Models\Traffic;
 use App\Models\User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -24,6 +25,7 @@ class CreateNewUser implements CreatesNewUsers
         Validator::make($input, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'branch' => ['required', 'string', 'in:'.collect(Traffic::BRANCHES)->keys()->implode(',')],
             'password' => $this->passwordRules(),
         ])->validate();
 
@@ -31,6 +33,7 @@ class CreateNewUser implements CreatesNewUsers
             return tap(User::create([
                 'name' => $input['name'],
                 'email' => $input['email'],
+                'branch' => $input['branch'],
                 'password' => Hash::make($input['password']),
             ]), function (User $user) {
                 $this->createTeam($user);

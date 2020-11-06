@@ -56,6 +56,7 @@ class TruckingFactory extends Factory
             'truck' => $this->faker->randomElement(['Kevin Mack', 'Keith Cordner', 'Bethany Czerwinski']),
             'order' => $this->faker->randomElement(['1', '2', '3', '4', '5']),
             'sorting' => $this->faker->randomElement(['a', 'b', 'c', 'd', 'e', 'f']),
+            'billed' => $this->faker->randomElement(['Yes', 'No', 'Ready']),
             'active' => $this->faker->randomElement(['0', '1']),
         ];
     }

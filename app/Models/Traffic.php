@@ -12,8 +12,21 @@ class Traffic extends Model
 {
     use HasFactory;
     use SoftDeletes;
+    use FullTextSearch;
 
     protected $guarded = [];
+
+    /**
+     * The columns of the full text index
+     */
+    protected $searchable = [
+        'salesman',
+        'make',
+        'model',
+        'sn',
+        'attachments',
+        'customer',
+    ];
 
 //    Need this for recent livewire update to edit on the front end?
 //    protected $appends = ['date_for_editing'];

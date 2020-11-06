@@ -3,8 +3,8 @@
     @csrf
 
     <x-input.dropdown field="salesman" leadingAddOn="Salesman" multipleDropdown>
-        @foreach($users as $user)
-            <option value="{{ $user->name }}">{{ $user->name }}</option>
+        @foreach(Config::get('constants.salesman') as $user)
+            <option value="{{ $user }}">{{ $user }}</option>
         @endforeach
     </x-input.dropdown>
 

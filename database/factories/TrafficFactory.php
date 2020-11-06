@@ -25,7 +25,7 @@ class TrafficFactory extends Factory
         return [
             'user_id' => $this->faker->randomDigit,
             'created_at' => $this->faker->time('now'),
-            'salesman' => $this->faker->name,
+            'salesman' => $this->faker->randomElement(['Adam Harding', 'Matt Rinckey', 'Mike Schuyler']),
             'branch' => $this->faker->randomElement(['Detroit', 'Grand Rapids', 'Lansing', 'Richmond', 'Saginaw', 'Traverse City']),
             'rerent' => $this->faker->randomElement(['Yes', 'No']),
             'io' => $this->faker->randomElement(['In', 'Out']),

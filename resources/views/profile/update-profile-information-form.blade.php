@@ -59,6 +59,42 @@
             <x-jet-input-error for="name" class="mt-2" />
         </div>
 
+        <!-- Branch -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="branch" value="{{ __('Branch') }}" />
+                <x-input.dropdown field="state.branch">
+                    <option value="Detroit">Detroit</option>
+                    <option value="Grand Rapids">Grand Rapids</option>
+                    <option value="Lansing">Lansing</option>
+                    <option value="Richmond">Richmond</option>
+                    <option value="Saginaw">Saginaw</option>
+                    <option value="Traverse City">Traverse City</option>
+                </x-input.dropdown>
+            <x-jet-input-error for="branch" class="mt-2" />
+        </div>
+
+        <!-- Traffic Table Size Preference -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="traffic" value="{{ __('Traffic Table Size') }}" />
+                <x-input.dropdown field="state.traffic">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </x-input.dropdown>
+            <x-jet-input-error for="traffic" class="mt-2" />
+        </div>
+
+        <!-- Trucking Table Size Preference -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="trucking" value="{{ __('Trucking Table Size') }}" />
+                <x-input.dropdown field="state.trucking">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </x-input.dropdown>
+            <x-jet-input-error for="trucking" class="mt-2" />
+        </div>
+
         <!-- Email -->
         <div class="col-span-6 sm:col-span-4">
             <x-jet-label for="email" value="Email" />
