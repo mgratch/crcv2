@@ -39,8 +39,15 @@ class Form extends Component
     public $uploadedFile;
 
     public function removeFile($name, $file) {
-        $traffic = Traffic::find($this->traffic->id);
-        return $traffic->details()->where('traffic_id',$traffic->id)->where('name', $file)->firstOrFail()->delete();
+        if (!empty($this->traffic->id)) {
+            $traffic = Traffic::find($this->traffic->id);
+            try {
+                $traffic->details()->where('traffic_id',$traffic->id)->where('name', $file)->firstOrFail()->delete();
+                return true;
+            } catch (\Exception $exception) {
+                return false;
+            }
+        }
     }
 
     public function mount($traffic)
